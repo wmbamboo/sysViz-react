@@ -1,0 +1,60 @@
+{
+  "name": "sysviz-react",
+  "version": "1.0.0",
+  "description": "A React wrapper around vizceral",
+  "main": "dist/vizceral.js",
+  "scripts": {
+    "build": "npm run copy:css && webpack --bail && webpack --bail -p",
+    "build:dev": "npm run copy:css && webpack --bail --mode=development && webpack --bail -d --mode=development",
+    "doc": "./docs.js ./src/vizceral.jsx",
+    "lint": "eslint src --ext .js --ext .jsx --fix",
+    "copy:css": "cpx ./src/vizceral.css ./dist",
+    "release": "release"
+  },
+  "license": "Apache-2.0",
+  "author": "wmbamboo <zelingh@hotmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wmbamboo/sysViz-react.git"
+  },
+  "keywords": [
+    "traffic",
+    "flow",
+    "network",
+    "graph",
+    "particles",
+    "webgl",
+    "visceral"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-lodash": "^3.2.9",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "cpx": "^1.5.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "gulp-react-docs": "^0.1.2",
+    "lodash-webpack-plugin": "^0.10.2",
+    "release-script": "^1.0.2",
+    "webpack": "^4.17.1",
+    "webpack-command": "^0.4.1",
+    "yargs": "^12.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.14",
+    "prop-types": "^15.6.1",
+    "vizceral": "^4.9.0"
+  },
+  "bugs": {
+    "url": "https://github.com/wmbamboo/sysViz-react/issues"
+  },
+  "homepage": "https://github.com/wmbamboo/sysViz-react#readme"
+}
